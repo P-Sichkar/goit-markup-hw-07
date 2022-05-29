@@ -32,7 +32,7 @@
 
 /* --------------- */
 body {
-  font-family: 'Roboto';
+  font-family: "Roboto";
 
   color: var(--dominant-text-color--);
   background-color: #ffffff;
@@ -97,7 +97,7 @@ img {
   margin-bottom: var(--margin-title);
 }
 
-.feature-slogan,
+.feature__slogan,
 .team-member {
   margin-bottom: var(--margin-subtitle);
 }
@@ -123,11 +123,15 @@ img {
 .logo {
   text-decoration: none;
   color: var(--logo-color);
-  font-family: 'Raleway';
+  font-family: "Raleway";
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
+
+.logo--dark {
+  color: #000000;
 }
 /*  --------  --------  --------  -------- */
 
@@ -137,11 +141,11 @@ img {
   margin-left: 93px;
 }
 
-.navigation-item:not(:last-child) {
+.navigation-list__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.navigation-link {
+.navigation-list__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -162,7 +166,7 @@ img {
 }
 
 .current::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -174,28 +178,28 @@ img {
   left: 0px;
 }
 
-.navigation-link:hover,
-.navigation-link:focus {
+.navigation-list__link:hover,
+.navigation-list__link:focus {
   color: var(--focus-link-color);
 }
 
-.header-contacts-list {
+.header-contacts__list {
   display: flex;
   margin-left: auto;
 }
-.header-contacts-item + .header-contacts-item {
+.header-contacts__item + .header-contacts__item {
   margin-left: 50px;
 }
 
-.header-tel:focus,
-.header-tel:hover,
-.header-mail:focus,
-.header-mail:hover {
+.header-tel__link:focus,
+.header-tel__link:hover,
+.header-mail__link:focus,
+.header-mail__link:hover {
   color: var(--focus-contact-color);
 }
 
-.header-tel,
-.header-mail {
+.header-tel__link,
+.header-mail__link {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -207,8 +211,8 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-mail-icon,
-.header-tel-icon {
+.header-mail__icon,
+.header-tel__icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -217,7 +221,10 @@ img {
 
 .hero {
   /* background-color: #2f303a; */
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
     url(../images/bc-hero.jpg);
   background-color: #c4c4c4;
   background-repeat: no-repeat;
@@ -233,7 +240,7 @@ img {
   margin-right: auto; */
 }
 
-.hero-text {
+.hero__text {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -243,7 +250,7 @@ img {
   /* max-width: 696px; */
   margin-bottom: 30px;
 }
-.hero-button {
+.hero__button {
   padding: 10px 32px;
   border: none;
 
@@ -264,20 +271,20 @@ img {
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button:hover,
-.hero-button:focus {
+.hero__button:hover,
+.hero__button:focus {
   color: var(--hero-button-background-color);
   background-color: var(--hero-button-text-color);
 }
 
 /* --------------------------FEATURE-------------------------- */
 
-.feature-list {
+.feature__list {
   display: flex;
   margin-left: -30px;
 }
 
-.feature-item {
+.feature__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
 }
@@ -295,7 +302,7 @@ img {
   margin: -1px;
 }
 
-.feature-slogan {
+.feature__slogan {
   text-transform: uppercase;
   font-size: 14px;
   line-height: 1.14;
@@ -303,14 +310,14 @@ img {
   color: var(--dominant-text-color);
 }
 
-.feature-text {
+.feature__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--feature-subtitle-color);
 }
 
-.feature-icon {
+.feature__icon {
   display: flex;
   height: 120px;
   justify-content: center;
@@ -501,7 +508,7 @@ img {
 
 /* --------------------------FOOTER-------------------------- */
 .footer {
-  font-family: 'Roboto';
+  font-family: "Roboto";
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
@@ -720,7 +727,8 @@ img {
   background-color: var(--batton-filter-background-color);
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-btn:focus,
 .filter-btn:hover {
@@ -979,7 +987,8 @@ img {
   justify-items: center;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    filter 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-icon {
@@ -990,7 +999,8 @@ img {
 .modal-input-check:checked + .modal-check-text .modal-checkbox-icon {
   background-color: #2196f3;
   border-color: #2196f3;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
     drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
