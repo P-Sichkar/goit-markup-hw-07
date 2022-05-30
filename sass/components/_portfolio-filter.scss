@@ -5,8 +5,10 @@
   justify-content: center;
 }
 
-.filter-item:not(:last-child) {
-  margin-right: 8px;
+.filter-item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 
 .filter-btn {

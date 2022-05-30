@@ -71,7 +71,6 @@ body {
   color: var(--focus-link-color);
   /* position: relative; */
 }
-
 .current::after {
   content: "";
   position: absolute;
