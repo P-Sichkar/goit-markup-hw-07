@@ -138,11 +138,9 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-
 .logo--dark {
   color: #000000;
 }
-
 .logo--light {
   color: #ffffff;
 }
@@ -661,14 +659,7 @@ body {
   cursor: pointer;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.filter-btn:focus,
-.filter-btn:hover {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.63;
-  text-align: center;
-  letter-spacing: 0.03em;
+.filter-btn:focus, .filter-btn:hover {
   color: var(--batton-filter-focus-text-color);
   background-color: var(--batton-filter-focus-background-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -687,25 +678,21 @@ body {
   margin-left: 30px;
   margin-bottom: 30px;
 }
+.projects-item:hover .projects-lable, .projects-item:focus .projects-lable {
+  transform: translateY(0%);
+}
 
 .projects-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projects-link:hover,
-.projects-link:focus {
+.projects-link:hover, .projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-wrap {
   position: relative;
   overflow: hidden;
-}
-
-.projects-item:hover .projects-lable,
-.projects-link:focus .projects-lable {
-  transform: translateY(0%);
 }
 
 .projects-lable {
@@ -781,8 +768,7 @@ body {
   text-align: center;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close-btn:hover {
+.modal-close-btn:hover, .modal-close-btn:focus {
   fill: #188ce8;
 }
 
@@ -815,10 +801,11 @@ body {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-input:hover,
-.modal-input:focus {
+.modal-input:hover, .modal-input:focus {
   border-color: var(--focus-link-color);
+}
+.modal-input:hover + .modal-input-icon, .modal-input:focus + .modal-input-icon {
+  fill: var(--focus-link-color);
 }
 
 .modal-label {
@@ -846,11 +833,6 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:hover + .modal-input-icon,
-.modal-input:focus + .modal-input-icon {
-  fill: var(--focus-link-color);
-}
-
 .modal-fill-textarea {
   margin-bottom: 20px;
 }
@@ -866,12 +848,9 @@ body {
   outline: none;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-textarea:focus,
-.modal-textarea:hover {
+.modal-textarea:focus, .modal-textarea:hover {
   border-color: var(--focus-link-color);
 }
-
 .modal-textarea::placeholder {
   font-size: 12px;
   line-height: 1.16;
@@ -902,19 +881,16 @@ body {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.modal-input-check:checked + .modal-check-text .check-icon {
+  fill: #ffffff;
+}
 .modal-input-check:checked + .modal-check-text .modal-checkbox-icon {
   background-color: #2196f3;
   border-color: #2196f3;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-
-.modal-input-check:hover + .modal-check-text .modal-checkbox-icon,
-.modal-input-check:focus + .modal-check-text .modal-checkbox-icon {
+.modal-input-check:hover + .modal-check-text .modal-checkbox-icon, .modal-input-check:focus + .modal-check-text .modal-checkbox-icon {
   border-color: #2196f3;
-}
-
-.modal-input-check:checked + .modal-check-text .check-icon {
-  fill: #ffffff;
 }
 
 .modal-check-text {
@@ -950,12 +926,9 @@ body {
   color: #ffffff;
   transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-submit-btn:hover,
-.modal-submit-btn:focus {
+.modal-submit-btn:hover, .modal-submit-btn:focus {
   background: #188ce8;
 }
-
 .modal-submit-btn:active {
   background: #ececec;
   color: #188ce8;
