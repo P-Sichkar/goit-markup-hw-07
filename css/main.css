@@ -183,7 +183,6 @@ body {
   color: var(--navigation-link-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .navigation-list__link:hover,
 .navigation-list__link:focus {
   color: var(--focus-link-color);
@@ -198,13 +197,6 @@ body {
   margin-left: 50px;
 }
 
-.header-tel__link:focus,
-.header-tel__link:hover,
-.header-mail__link:focus,
-.header-mail__link:hover {
-  color: var(--focus-contact-color);
-}
-
 .header-tel__link,
 .header-mail__link {
   display: inline-flex;
@@ -217,6 +209,12 @@ body {
   color: var(--header-contact-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.header-tel__link:hover,
+.header-tel__link:focus,
+.header-mail__link:hover,
+.header-mail__link:focus {
+  color: var(--focus-link-color);
+}
 
 .header-mail__icon,
 .header-tel__icon {
@@ -226,7 +224,11 @@ body {
 
 /* --------------------------HERO-------------------------- */
 .hero {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bc-hero.jpg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bc-hero.jpg);
   background-color: #c4c4c4;
   background-repeat: no-repeat;
   background-position: center;
@@ -265,9 +267,9 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   color: var(--hero-button-text-color);
   background-color: var(--hero-button-background-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .hero__button:hover,
 .hero__button:focus {
   color: var(--hero-button-background-color);
@@ -374,7 +376,8 @@ body {
   flex-basis: calc(25% - 30px);
   margin-left: 30px;
   background-color: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
@@ -419,9 +422,9 @@ body {
   justify-content: center;
   align-items: center;
   fill: var(--icon-main-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .team-soc-link:hover,
 .team-soc-link:focus {
   background-color: var(--icon-main-focus-background-color);
@@ -511,7 +514,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-address-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-tel,
@@ -521,7 +525,8 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-contact-color);
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc {
@@ -557,7 +562,8 @@ body {
   align-items: center;
   background-color: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-soc-link:hover,
@@ -626,7 +632,8 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .subscription-btn:focus,
@@ -679,7 +686,9 @@ body {
   color: var(--batton-filter-text-color);
   background-color: var(--batton-filter-background-color);
   cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter-btn:focus,
@@ -691,7 +700,8 @@ body {
   letter-spacing: 0.03em;
   color: var(--batton-filter-focus-text-color);
   background-color: var(--batton-filter-focus-background-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* --------------------------PORTFOLIO-PROJECTS-------------------------- */
@@ -715,7 +725,8 @@ body {
 
 .projects-link:hover,
 .projects-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-wrap {
@@ -773,7 +784,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* --------------------------  MODAL  -------------------------- */
@@ -783,7 +795,8 @@ body {
   min-height: 581px;
   padding: 40px;
   background: #ffffff;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
 
@@ -914,7 +927,9 @@ body {
   display: flex;
   align-items: center;
   justify-items: center;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), filter 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    filter 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .check-icon {
@@ -925,7 +940,9 @@ body {
 .modal-input-check:checked + .modal-check-text .modal-checkbox-icon {
   background-color: #2196f3;
   border-color: #2196f3;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
+    drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .modal-input-check:hover + .modal-check-text .modal-checkbox-icon,
@@ -968,7 +985,8 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: #ffffff;
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-submit-btn:hover,
@@ -979,4 +997,4 @@ body {
 .modal-submit-btn:active {
   background: #ececec;
   color: #188ce8;
-}/*# sourceMappingURL=main.css.map */
+} /*# sourceMappingURL=main.css.map */

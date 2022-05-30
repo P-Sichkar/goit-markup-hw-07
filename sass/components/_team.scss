@@ -73,10 +73,9 @@
   fill: var(--icon-main-color);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.team-soc-link:hover,
-.team-soc-link:focus {
-  background-color: var(--icon-main-focus-background-color);
-  fill: var(--icon-main-focus-color);
+  &:hover,
+  &:focus {
+    background-color: var(--icon-main-focus-background-color);
+    fill: var(--icon-main-focus-color);
+  }
 }
