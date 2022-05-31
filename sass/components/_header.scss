@@ -8,8 +8,7 @@
 }
 
 .navigation {
-  display: flex;
-  align-items: center;
+  @include align-list;
 
   /* padding-top: 25px;
   padding-bottom: 25px; */
