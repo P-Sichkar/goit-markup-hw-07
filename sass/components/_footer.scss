@@ -171,19 +171,11 @@
   &:hover {
     background: #188ce8;
     color: #ececec;
-
-    .subscription-btn-icon {
-      fill: #ececec;
-      background-color: transparent;
-    }
   }
 
   &:active {
     background: #ececec;
     color: #188ce8;
-    .subscription-btn-icon {
-      fill: #188ce8;
-    }
   }
 }
 
@@ -192,4 +184,14 @@
   background-color: transparent;
   margin-left: 10px;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  .subscription-btn:focus &,
+  .subscription-btn:hover & {
+    fill: #ececec;
+    background-color: transparent;
+  }
+
+  .subscription-btn:active & {
+    fill: #188ce8;
+  }
 }
