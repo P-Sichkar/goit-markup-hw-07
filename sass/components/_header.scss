@@ -21,10 +21,8 @@
   margin-left: 93px;
 }
 
-.navigation-list__item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
+.navigation-list__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .navigation-list__link {

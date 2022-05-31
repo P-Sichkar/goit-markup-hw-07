@@ -20,10 +20,8 @@
   margin-top: 20px;
 }
 
-.footer-contacts-item {
-  &:not(:last-child) {
-    margin-bottom: 9px;
-  }
+.footer-contacts-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer-tel,
