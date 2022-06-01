@@ -11,13 +11,6 @@
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-bottom: 30px;
-
-  &:hover,
-  &:focus {
-    .projects-lable {
-      transform: translateY(0%);
-    }
-  }
 }
 
 .projects-link {
@@ -27,6 +20,10 @@
   &:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
+
+    .projects-lable {
+      transform: translateY(0%);
+    }
   }
 }
 
